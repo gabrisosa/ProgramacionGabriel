@@ -10,12 +10,12 @@ public:
         y = _y;
         z = _z;
         }
-    float getVectores(float &a, float &b, float &c){
+    void getVectores(float &a, float &b, float &c){
         a = x;
         b = y;
         c = z;
     }
-    float module(float a, float b, float c){
+    float module(){
         return sqrt(pow(x,2) + pow(y,2) + pow(z,2)); // Un poco raro pero funciona
     }
     void multiply(Vector3D vectorQueMultiplica){
@@ -44,7 +44,7 @@ int main()
 
         Vector3D myVector1(x, y, z);
 
-        cout << "The module of the first vector: " << myVector1.module(x, y, z) << endl;
+        cout << "The module of the first vector: " << myVector1.module() << endl;
 
         cout << "Now, let's move on to the second vector, if you may." << endl;
         cout << "Introduce the value of x: ";
@@ -56,7 +56,7 @@ int main()
 
         Vector3D myVector2(x, y, z);
 
-        cout << "The module of the second vector: " << myVector2.module(x, y, z) << endl;
+        cout << "The module of the second vector: " << myVector2.module() << endl;
 
         cout << "We are getting to the end, there is just one more left, be patient." << endl;
         cout << "Introduce the value of x: ";
@@ -68,7 +68,7 @@ int main()
 
         Vector3D myVector3(x, y, z);
 
-        cout << "The module of the third vector: " << myVector3.module(x, y, z) << endl;
+        cout << "The module of the third vector: " << myVector3.module() << endl;
 
         cout << "It is time to do some operations. Take a seat." << endl;
         cout << "The result of multiplying the first vector by the second one is:" << endl;
