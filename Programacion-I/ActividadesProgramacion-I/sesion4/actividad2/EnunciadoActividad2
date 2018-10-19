@@ -1,0 +1,9 @@
+Actividad 2
+
+Escribir una clase llamada NumeroComplejo que contenga:
+
+    -Un atributo privado parte_real (de tipo decimal)
+    -Un atributo privado parte_imaginaria (de tipo decimal)
+    -Una función pública sumar(float r, float i) que realice la suma de la parte real e imaginaria por el número complejo (r,i)
+    -Una función pública multiplicaPor(float r, float i) que realice la multplicación de la parte real e imaginaria por el número complejo (r,i)
+    -Una función getNumero(float & r, float & i) que tome dos parámetros por referencia donde se almacenen la parte real e imaginaria
