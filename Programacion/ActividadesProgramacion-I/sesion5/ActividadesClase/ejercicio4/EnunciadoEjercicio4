@@ -1,0 +1,3 @@
+Ejercicio 4 - Suma de menores divisibles por 3 (2 puntos)
+
+Realizar una función que tome como parámetro un número entero positivo y devuelva la suma de todos los número menores al parámetro divisibles por 3.
