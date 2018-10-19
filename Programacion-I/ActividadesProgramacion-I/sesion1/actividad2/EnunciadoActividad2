@@ -1,0 +1,36 @@
+Actividad 3
+
+#include <iostream>
+   
+using namespace std;
+ 
+class Persona{
+ 
+public:
+    //constructor
+    Persona(string _nombre, unsigned short int _edad, unsigned short int _altura)
+    {
+        nombre = _nombre;
+        edad = _edad;
+        altura = _altura;
+    }
+ 
+    //variables miembro (atributos)
+    string nombre;
+    unsigned short edad;
+    unsigned short altura;
+};
+ 
+int main()
+{
+    Persona chica("Nieves", 27, 172);
+    cout << "Hola " << chica.nombre <<
+            ", tienes " << chica.edad <<
+            " años y mides "<< chica.altura << "cm. " << endl;
+    return 0;
+}
+
+    -Modificar el programa anterior para añadir una nueva clase Mascota
+    La clase Mascota debe tener como atributos: nombre, especie (perro, gato, etc.), edad
+    -Añadir a la clase Persona un atributo: mascotaFavorita de tipo Mascota
+    Imprimir por pantalla: “Hola xxx, tu mascota favorita es un xxx(especie) y se llama xxx“
