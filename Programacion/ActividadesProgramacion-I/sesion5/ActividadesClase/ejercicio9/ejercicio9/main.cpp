@@ -14,7 +14,7 @@ int main()
     if (num > max){
         max = num;
     }
-    if (num < min && num != 0){ //Dos condiciones para que no utilice el cero al calcular el minimo
+    if (num < min && num != 0){//Dos condiciones para que no utilice el cero al calcular el minimo
         min = num;
     }
     }
