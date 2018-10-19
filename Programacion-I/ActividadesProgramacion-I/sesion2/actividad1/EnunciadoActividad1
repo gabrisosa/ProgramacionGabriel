@@ -1,0 +1,13 @@
+Actividad 1
+
+Escribir un programa que incluya 2 clases: Triangulo y Rectángulo.
+
+    -La clase triángulo tiene como atributos base y altura
+    -La clase rectángulo tiene como atributos lado1 y lado2
+
+El programa debe realizar lo siguiente:
+
+    -El programa debe pedir que introduzcamos la base y la altura de un triángulo e imprimirá por pantalla su área.
+    -A continuación el programa debe pedir que introduzcas el lado 1 y el lado 2 de un rectángulo e imprimirá por pantalla su área y su perímetro.
+
+Nota. Todos los atributos de las clases Triángulo y Rectángulo deben ser privados.

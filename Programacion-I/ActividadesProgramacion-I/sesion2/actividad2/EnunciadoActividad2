@@ -1,0 +1,18 @@
+Actividad 2
+
+Realizar un programa que contenga:
+
+    -Una clase llamada Numero
+    -La clase tiene un solo atributo numero de tipo decimal
+    -La clase tiene las siguientes funciones miembro:
+        ·divideBy(float otherNumber); que devuelve el resultado de dividir número por otro número
+        ·multiplyBy(float otherNumber); que devuelve el resultado de multiplicar por otro número
+        ·addTo(float otherNumer); que devuelve el resultado de sumar otro número
+    -La función divideBy debe lanzar una excepción (tipo string) cuando se intentar realizar una división por 0
+
+El programa debe:
+
+    1. Pedirle al usuario que introduzca un número
+    2. Pedirle al usuario un número por el que desee dividir (y mostrar el resultado por pantalla)
+    3. Pedirle al usuario un número por el que desee multiplicar (y mostrar el resultado por pantalla)
+    4. Pedirle al usuario un número que desee sumar (y mostrar el resultado por pantalla)
