@@ -1,0 +1,7 @@
+Actividad 3-1
+
+Escribir una clase llamada NumeroEntero que contenga:
+
+    -Un atributo privado num (de tipo entero)
+    -Una función factorial() que devuelva el factorial del número (si este es mayor que cero)
+    -Debe generar una excepción si intentamos calcular el factorial de un número menor o igual que 0
