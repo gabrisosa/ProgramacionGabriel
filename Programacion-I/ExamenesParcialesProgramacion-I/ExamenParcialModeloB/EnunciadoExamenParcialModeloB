@@ -1,0 +1,142 @@
+PRIMER EXAMEN PARCIAL PROGRAMACIÓN I (Modelo B)
+
+Se desea desarrollar un programa que gestione la reserva de tiendas de campaña y bungalows en un
+camping. Se pide resolver el programa siguiendo los siguientes pasos:
+
+
+PRIMERA PARTE (5 Puntos)
+
+PASO 1 (1 Punto)
+
+Crear una clase Camping, con los siguientes atributos:
+
+   -Número total de tiendas de campaña en el camping.
+   -Número total de bungalows en el camping
+   -Número de tiendas de campaña ocupadas.
+   -Número de bungalows ocupados.
+   -Precio tienda de campaña (será un número entero).
+   -Precio de bungalow (será un número entero).
+
+En el constructor, inicializar el número disponible de tiendas de campaña y bungalows, así como el
+precio de cada una de ellas. En este paso no es necesario comprobar si los datos introducidos son
+correctos. (Inicialmente el número de ocupación es 0).
+
+PASO 2 (1.5 Puntos)
+
+Verificar en el constructor que los datos introducidos son correctos: número de plazas y precios
+estrictamente positivos. Gestionar los posibles errores con excepciones (si hay un error se debe lanzar
+una excepción de tipo string notificando el error).
+
+PASO  3 (1 Punto)
+
+Crear las funciones getter para todos los atributos de la clase.
+
+PASO 4 (1.5 Puntos)
+
+Crear una función miembro de la clase Camping que devuelva el dinero que se recaudaría si se vendieran
+todas las tiendas y bungalows disponibles.
+
+
+Un ejemplo de función main hasta aquí sería:
+
+int main()
+{
+  int bungalows, tiendas, precio_bungalow, precio_tienda;
+  try{
+     cout << "Introduce el número de bungalows: ";
+     cin >> bungalows;
+     cout << "Introduce el número de tiendas: ";
+     cin >> tiendas;
+     cout << "Introduce el precio de los bungalows: ";
+     cin >> precio_bungalow;
+     cout << "Introduce el precio de las tiendas: ";
+     cin >> precio_tienda;
+
+     Camping camping{bungalows, tiendas, precio_bungalow, precio_tienda};
+
+     cout << "================================================" << endl;
+     cout << "Recaudacion Maxima: " << camping.getRecaudacionMaxima() << endl;
+     cout << "Bungalows: " << camping.getBungalowsDisponibles() << endl;
+     cout << "Precio Bungalows: " << camping.getPrecioBungalow() << endl;
+     cout << "Tiendas: " << camping.getTiendasDisponibles() << endl;
+     cout << "Precio Tiendas: " << camping.getPrecioTienda() << endl;
+     cout << "================================================" << endl;
+
+  }catch(string e){
+     cout << e << endl;
+     return 1;
+  }
+  return 0;
+}
+
+
+
+SEGUNDA PARTE (5 Puntos)
+
+PASO 5 (1 Punto)
+
+Crear una función miembro de la clase Camping que devuelva el dinero recaudado teniendo en cuenta las
+tiendas y bungalows vendidos.
+
+PASO 6 (2 Puntos)
+
+Crear una función miembro de la clase Camping que realice una reserva de bungalows si hay plazas
+disponibles. El número de bungalows a reservar se debe pasar como parámetro. Debe devolver verdadero
+si la reserva se ha realizado con éxito (había bungalows disponibles) o falso en caso contrario (no había
+suficientes bungalows o el número de bungalows a reservar es negativo).
+
+Crear otra función miembro de la clase Camping que realice una reserva de tiendas si hay tiendas
+disponibles. Debe devolver verdadero si la reserva se ha realizado con éxito (había tiendas disponibles) o
+falso en caso contrario.
+
+PASO 7 (2 Puntos)
+
+Completar la función main anterior para que realice los siguientes pasos:
+   1. Preguntar al usuario cuántos bungalows quiere reservar y realizar la reserva utilizando la función
+del Paso 6.
+   2. Si la reserva se ha realizado con éxito mostrar por pantalla “Reserva realizada”, en caso contrario
+mostrar “No hay tantos bungalows disponibles”.
+   3. Preguntar al usuario cuántas tiendas quiere reservar y realizar la reserva utilizando la función del
+Paso 6.
+   4. Si la reserva se ha realizado con éxito mostrar por pantalla “Reserva realizada”, en caso contrario
+mostrar “No hay tantas tiendas disponibles”.
+   5. Mostrar por pantalla la recaudación real, utilizando la función del Paso 5.
+
+
+Un ejemplo de ejecución del programa podría ser:
+
+Introduce el número de bungalows: 30
+Introduce el número de tiendas: 60
+Introduce el precio de los bungalows: 20
+Introduce el precio de las tiendas: 10
+
+Recaudacion Maxima: 1200
+Bungalows: 30
+Precio Bungalows: 20
+Tiendas: 60
+Precio Tiendas 10
+
+¿Cuántos bungalows deseas reservar? 8
+Reserva realizada con éxito
+¿Cuántas tiendas deseas reservar? 30
+Reserva realizada con éxito
+Recaudacion total: 460
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
