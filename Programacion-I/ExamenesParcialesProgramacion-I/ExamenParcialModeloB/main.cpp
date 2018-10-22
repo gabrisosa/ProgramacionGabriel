@@ -13,6 +13,8 @@ public:
         bungalows = _bungalows;
         precio_tienda = _precio_tienda;
         precio_bungalow = _precio_bungalow;
+        tiendas_ocupadas = 0;
+        bungalows_ocupados = 0;
     }
 
     int getTiendasDisponibles(){
@@ -93,21 +95,23 @@ int main()
         cout << "Precio tiendas: " << gas.getPrecioTienda() << endl;
         cout << "==================================================\n" << endl;
 
-        int reserva;
+        int numReservaBungalows;
 
         cout << "¿Cuántos bungalows desea reservar?: ";
-        cin >> reserva;
+        cin >> numReservaBungalows;
 
-        if(gas.reservaBungalows(reserva)){
+        if(gas.reservaBungalows(numReservaBungalows)){
             cout << "Reserva realizada con éxito." << endl;
         }else{
             cout << "No se ha podido realizar la reserva." << endl;
         }
 
-        cout << "¿Cuántas tiendas desea reservar?: ";
-        cin >> reserva;
+        int numReservaTiendas;
 
-        if(gas.reservaTiendas(reserva)){
+        cout << "¿Cuántas tiendas desea reservar?: ";
+        cin >> numReservaTiendas;
+
+        if(gas.reservaTiendas(numReservaTiendas)){
             cout << "Reserva realizada con éxito." << endl;
         }else{
             cout << "No se ha podido realizar la reserva." << endl;
