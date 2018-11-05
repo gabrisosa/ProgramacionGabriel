@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Why should I use DuckDuckgo?</title>
+        <!-- image placeholder library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#training">Formación</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+        </nav>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/DuckDuckGo_logo_and_wordmark_%282014-present%29.svg/245px-DuckDuckGo_logo_and_wordmark_%282014-present%29.svg.png" alt="No se carga la imagen">
+            <h1>Why should I use DuckDuckgo?</h1>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.</p>
+        </header>
+        <main id="training">
+            <section>
+                <h2>Formación/Ocupación</h2>
+            </section>
+            <section id="proyects">
+                <h2>Proyectos</h2>
+                <ul>
+                    <li><a href="#">Proyecto 1</a></li>
+                    <li><a href="#">Proyecto 2</a></li>
+                    <li><a href="#">Proyecto 3</a></li>
+                    <li><a href="#">Proyecto 4</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer id="contact">
+            <address>
+                <p>Contacto</p>
+                <a href="https://start.duckduckgo.com/">DuckDuckGo</a>
+                <a href="#">Future1</a>
+                <a href="#">Future2</a>
+            </address>
+        </footer>
+    </body>
+</html>
